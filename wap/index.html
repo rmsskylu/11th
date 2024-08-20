@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi" />
+	<meta name="renderer" content="webkit">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="description" content="参与活动有“金”喜" />
+	<title>钱大掌柜十一周年</title>
+	<link rel="stylesheet" href="../js/swiper.min.css">
+	<style type="text/css">
+		.ui-header {
+			width: 100%;
+			position: fixed;
+			z-index: 999999;
+			top: 0;
+			left: 0;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			color: #333;
+			font-size: 16px;
+			background-color: #fff;
+		}
+
+		.ui-header .ui-header-back {
+			display: block;
+			border-top: 2px solid #333;
+			border-right: 2px solid #333;
+			-webkit-transform: rotate(-135deg);
+			-ms-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+			height: 12px;
+			width: 12px;
+			position: absolute;
+			top: 12px;
+			left: 15px;
+		}
+
+
+		html {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			min-height: 100%;
+			max-width: 750px;
+			margin: 0 auto !important;
+			padding: 0;
+			font-family: Microsoft YaHei;
+			background-color: #fff;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 0;
+			vertical-align: middle;
+		}
+
+		.ui-share {
+			position: fixed;
+			top: 46px;
+			right: 0;
+			width: 24px;
+			height: auto;
+			z-index: 20;
+		}
+
+		.ui-web {
+			background-image: linear-gradient(180deg, #FEE2AF 0%, #F0C15C 73%);
+		}
+
+		.ui-calendar {
+			padding: 17px 2.7% 16px;
+		}
+
+		.calendar-bg {
+			padding: 0 19px 24px;
+			background: #FFF0CD;
+			border-radius: 0 0 20px 20px;
+		}
+
+		.calendar-img {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #FFFFFF;
+			border-radius: 10px;
+		}
+
+		.ui-gift {
+			padding: 0 2.7% 16px;
+		}
+
+		.gift-item {
+			padding: 0 19px 24px;
+			background: #FFF0CD;
+			border-radius: 0 0 20px 20px;
+
+		}
+
+		.gift-item-task {
+			border: 1px solid #FFFFFF;
+			border-radius: 10px;
+		}
+
+		.gift-item-title {
+			padding: 16px 8.8% 14px;
+			font-size: 16px;
+			color: #975720;
+			text-align: center;
+			font-weight: bold;
+			background: #FBF4E0;
+		}
+
+		.gift-wrap {
+			background: #FBF4E0;
+		}
+
+		.gift-list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 4%;
+			padding-bottom: 7px;
+			border-bottom: 1px solid #606060;
+			background: #FBF4E0;
+		}
+
+		.gift-list3 {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 4%;
+			padding-bottom: 10px;
+			background: #FBF4E0;
+		}
+
+		.gift-list-sign0 {
+			margin-top: 0;
+			font-size: 11px;
+			color: #FFFFFF;
+			width: 45px;
+			height: 15px;
+			background: #D39B5B;
+			border-radius: 8px 33px 33px 0;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.gift-list-sign {
+			margin-top: 7px;
+			font-size: 11px;
+			color: #FFFFFF;
+			width: 45px;
+			height: 15px;
+			background: #D39B5B;
+			border-radius: 8px 33px 33px 0;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.gift-list-title {
+			padding: 7px 0 5px;
+			font-size: 14px;
+			color: #C94F31;
+			font-weight: bold;
+		}
+
+		.gift-list-sub {
+			font-size: 13px;
+			color: #AF7849;
+		}
+
+		.gift-list-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 81px;
+			height: 35px;
+			font-size: 16px;
+			color: #FFFFFF;
+			font-weight: bold;
+			background-image: linear-gradient(180deg, #F6AF70 0%, #F07D25 100%);
+			border-radius: 36px;
+		}
+
+		.gift-list-img {
+			margin-top: 12px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.gift-list-flex {
+			width: 48%;
+		}
+
+		.ui-prod {
+			padding: 0 2.7% 16px;
+		}
+
+		.prod-bg {
+			padding: 0 19px 24px;
+			background: #FFF0CD;
+			border-radius: 0 0 20px 20px;
+		}
+
+		.prod-nav {
+			display: flex;
+		}
+
+		.prod-nav-img {
+			margin-right: 5px;
+			width: 6px;
+			height: 22px;
+		}
+
+		.prod-nav-text {
+			font-size: 16px;
+			color: #975720;
+		}
+
+		.prod-info {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.prod-desc {
+			position: relative;
+			padding: 9px 38px 12px 15px;
+			background: #F2F2F2;
+			border-radius: 0 0 8px 8px;
+		}
+
+		.prod-desc-text {
+			font-size: 10px;
+			color: #999999;
+		}
+
+		.prod-desc-more {
+			display: none;
+			font-size: 10px;
+			color: #999999;
+		}
+
+		.prod-desc-img {
+			position: absolute;
+			top: 9px;
+			right: 11px;
+			width: 16px;
+			height: 16px;
+		}
+
+		.prod-desc-img-selected {
+			position: absolute;
+			top: 9px;
+			right: 11px;
+			width: 16px;
+			height: 16px;
+			transform: rotate(180deg);
+		}
+
+		.prod-btn {
+			padding: 22px 35px 0;
+		}
+
+		.ui-tips {
+			margin: 0 4%;
+			font-size: 9px;
+			color: #8F541B;
+			line-height: 12.5px;
+		}
+
+		.ui-video {
+			margin: 30px 2.7% 0;
+			padding: 0 27px 25px;
+			background: #FFF0CD;
+			border-radius: 20px;
+		}
+
+		.video-title {
+			padding: 24px 0 20px;
+			font-size: 20px;
+			color: #8F541B;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.video-content {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		.ui-footer {
+			padding: 15px 2.7% 0;
+		}
+
+		.ui-phone {
+			padding: 24px 0 30px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.phone-img {
+			width: 50%;
+		}
+	</style>
+	<script type="text/javascript" src="https://www.yypt.com/m/pages/js/env.js?9,999"></script>
+	<script type="text/javascript" src="https://www.yypt.com/m/pages/js/stepdo.js?9,999"></script>
+	<script type="text/javascript" src="https://www.yypt.com/m/pages/js/app-plugin.js?9,999"></script>
+	<script type="text/javascript" src="../js/trackpoint_util.js"></script>
+	<script type="text/javascript" src="../js/sensorsdata_cfg.js"></script>
+	<script type="text/javascript" src="../js/sensorsdata.min.js"></script>
+</head>
+
+<body>
+	<header class="ui-header" style="display: none;">
+		<span class="ui-header-back" onclick="window.history.go(-1)"></span>
+		钱大掌柜
+	</header>
+	<img src="../img/header.png" alt="">
+	<img src="../img/share.png" class="ui-share" alt="">
+	<div class="ui-web">
+		<div class="ui-calendar">
+			<img src="../img/calendar.png" alt="">
+			<div class="calendar-bg">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a><img class="calendar-img" src="../img/banner1.png" alt=""></a>
+						</div>
+						<div class="swiper-slide">
+							<a><img class="calendar-img" src="../img/banner2.png" alt=""></a>
+						</div>
+						<div class="swiper-slide">
+							<a><img class="calendar-img" src="../img/banner3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui-gift">
+			<img src="../img/gift.png" alt="">
+			<div class="gift-item">
+				<div class="gift-item-task">
+					<div class="gift-item-title">一键惊喜三连，带你做幸福的显眼包
+						最高可得14000京东e卡</div>
+					<div class="gift-wrap">
+						<div class="gift-list">
+							<div class="">
+								<div class="gift-list-sign0">惊喜1</div>
+								<div class="gift-list-title">玩任务 开福袋</div>
+								<div class="gift-list-sub">解锁任务，</div>
+								<div class="gift-list-sub">赢抽奖机会最高得6000元京东e卡</div>
+							</div>
+							<div class="gift-list-btn">去参与</div>
+						</div>
+						<div class="gift-list">
+							<div class="">
+								<div class="gift-list-sign">惊喜2</div>
+								<div class="gift-list-title">邀好友，「友」福气</div>
+								<div class="gift-list-sub">邀请好友拼团参与，得3次抽奖机会</div>
+								<div class="gift-list-sub">最高享3000元京东e卡</div>
+							</div>
+							<div class="gift-list-btn">去参与</div>
+						</div>
+						<div class="gift-list3">
+							<div class="">
+								<div class="gift-list-sign">惊喜3</div>
+								<div class="gift-list-title">兴赢家，挑战夺真金</div>
+								<div class="gift-list-sub">玩基金模拟盘挑战，</div>
+								<div class="gift-list-sub">最高可得5000元京东e卡</div>
+							</div>
+							<div class="gift-list-btn">去参与</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="gift-list-img">
+					<img class="gift-list-flex" src="../img/gold_red.png" alt="">
+					<img class="gift-list-flex" src="../img/gold_small.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="ui-prod">
+			<img src="../img/product.png" alt="">
+			<div class="prod-bg">
+				<div class="prod-nav">
+					<img class="prod-nav-img" src="../img/prod_sign.png" alt="">
+					<div class="prod-nav-text">庆祝款理财</div>
+				</div>
+				<img class="prod-info" src="../img/prod_info.png" alt="">
+				<div class="prod-desc">
+					<div class="prod-desc-text" id="prodText">历史业绩和业绩比较基准不代表其未来表现,不等于理财产品实际收益，不作为产品收益业绩保证</div>
+					<div class="prod-desc-more" id="prodMore">业绩比较基准（年化）说明：
+						本产品投资对象主要包括固定收益类资产、货币市场工具、资产管理计划、非标资产等，业绩比较基准测算参考上述投资对象的资产加权平均收益率。综合考虑当前市场环境、资产配置中枢比例、产品费用及税费等因素，得出该产品业绩比较基准。历史业绩和业绩比较基准不代表其未来表现，不等于理财产品实际收益，不作为产品收益业绩保证，投资须谨慎。
+					</div>
+					<img id="arrow" class="prod-desc-img" src="../img/arrow.png" alt="" onclick="prodInfo()">
+				</div>
+				<img class="prod-btn" src="../img/prod_btn.png" alt="">
+			</div>
+		</div>
+		<div class="ui-tips">
+			<div>
+				风险提示：以上产品为代销产品，非兴业银行理财产品。产品投资管理机构为兴银理财，兴业银行为本产品的代销机构,不承担产品的投资、兑付和风险管理责任。业绩比较基准不是预期收益率，不代表产品的未来表现和实际收益，不构成对产品收益的承诺。
+			</div>
+			<div>理财非存款，产品有风险，投资须谨慎。</div>
+		</div>
+		<div class="ui-video">
+			<div class="video-title">专业财富搭子，理财不走弯路</div>
+			<video class="video-content" id="videos" src="../img/10秒视频资源.mp4" controls poster="../img/unvideo.png"
+				loop="loop" x-webkit-airplay="true" webkit-playsinline="true">您的浏览器暂不支持播放该视频，请升级至最新版浏览器。</video>
+		</div>
+		<img class="ui-footer" src="../img/footer.png" alt="">
+		<div class="ui-phone">
+			<img class="phone-img" src="../img/phone.png" alt="">
+		</div>
+		<div class="test"></div>
+	</div>
+
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+			direction: 'horizontal',
+			loop: false,
+			// 如果需要分页器
+		})
+
+		function showNav() {
+			var search = window.location.search;
+			if (!search || !search.length) {
+				return false;
+			}
+			return search.indexOf('showNav=true') >= 0;
+		}
+
+		function show(className) {
+			var elements = document.getElementsByClassName(className);
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].style.display = 'inline';
+			}
+		}
+		if (showNav()) {
+			show('ui-header');
+			document.body.style.paddingTop = '35px';
+		}
+		var flag = false;
+		function prodInfo() {
+			flag = !flag;
+			var arrow = document.getElementById("arrow");
+			var text = document.getElementById("prodText");
+			var more = document.getElementById("prodMore");
+			if (flag) {
+				arrow.setAttribute("class", "prod-desc-img-selected");
+				text.style.display = "none";
+				more.style.display = "block";
+			} else {
+				arrow.setAttribute("class", "prod-desc-img");
+				text.style.display = "block";
+				more.style.display = "none";
+			}
+		}
+		var videos = document.getElementById("videos");
+		videos.onclick = function () {
+			if (videos.paused) {
+				videos.play()
+			} else {
+				videos.pause()
+			}
+		}
+	</script>
+</body>
+
+</html>
